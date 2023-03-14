@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2f0b541238.js" crossorigin="anonymous"></script>
+    <style>
+      #hero {
+        background: gray;
+        color: #fff;
+        text-align: center;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        background-image: url("images/image1.webp");
+        background-repeat: none;
+        background-size: cover;
+
+        min-height: 100vh;
+      }
+
+      #hero h1, #hero h4 {
+        font-size: 24px;
+        text-shadow: 1px 1px #000;
+        margin-bottom: 50px;
+      }
+
+      #hero h1 {
+        font-size: 65px;
+        margin-bottom: 20px;
+      }
+
+      #hero a.btn {
+        color: #fff;
+        background-color: #131633;
+        text-decoration: none;
+        padding: 20px 48px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        opacity: 1;
+        border: 2px solid #fff;
+      }
+
+      #hero a.btn:hover {
+        background-color: #2196f3;
+      }
+
+      @media (max-width: 800px) {
+        #hero {
+            min-height: 600px;
+        }
+
+        #hero h1 {
+            font-size: 30px;
+        }
+        #hero h4 {
+            font-size: 18px;
+        }
+        #hero a.btn {
+            padding: 15px 38px;
+        }
+      }
+    </style>
+</head>
+<body id="top">
+    <div id="hero">
+        <div class="bg_image"></div>
+        <h1>Responsive web design</h1>
+        <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo temporibus deleniti dicta quia cupiditate ullam voluptate tenetur et, quidem reiciendis! Earum qui excepturi architecto nesciunt fuga ex temporibus unde iste.</h4>
+        <a class="btn">More content</a>
+    </div>
+    <!------------------------------------------------------------------------->
+   <footer>
+    <ul>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a> </li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+    <p>&copy; <script>document.write(new Date().getFullYear());</script> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque quas molestias at voluptatem! Quo nostrum obcaecati adipisci quibusdam quasi illum volu</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius amet quos quae libero, odio tempore consequatur earum provident veniam ratione cons</p>
+   </footer>
+</body>
+</html>
