@@ -8,87 +8,80 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/2f0b541238.js" crossorigin="anonymous"></script>
     <style>
+        #main {
+            background: gray;
+            color: #fff;
+            text-align: center;
 
-        body {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding: 50px 0;
+
+            min-height: 70vh;
         }
-      #hero {
-        background: gray;
-        color: #fff;
-        text-align: center;
 
+        #main h2 {
+            font-size: 40px;
+            margin-bottom: 50px;
+            
+        }
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        /* flex-wrap: wrap; */
-        flex-grow: 1;
-        flex-shrink: 1;
+        #main p {
+            padding: 80px 20px;
+            font-size: 24px;
+            margin: 10px 20px;
+        }
 
-        background-image: url("images/image1.webp");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: center center;
+        #main ol {
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
 
-        min-height: 100vh;
-      }
+        @media (max-width: 800px) {
+            #main {
+                min-height: 300px;
+            }
 
-      #hero h1, #hero h4 {
-        font-size: 24px;
-        text-shadow: 1px 1px #000;
-        margin-bottom: 50px;
-      }
+            #main h2 {
+            font-size: 30px;
+            margin-top: 40px;
+            border-bottom: 4px solid rgba(255,205,50, 100%);
+       
+        }
 
-      #hero h1 {
-        font-size: 65px;
-        margin-bottom: 20px;
-      }
-
-      #hero a.btn {
-        color: #fff;
-        background-color: #131633;
-        text-decoration: none;
-        padding: 20px 48px;
-        border-radius: 10px;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        opacity: 1;
-        border: 2px solid #fff;
-      }
-
-      #hero a.btn:hover {
-        background-color: #2196f3;
-      }
-
-      @media (max-width: 800px) {
-        #hero {
-            min-height: 50vh;
+        #main p {
+            font-size: 30px;
+            padding: 80px 20px;
            
         }
-
-        #hero h1 {
-            font-size: 30px;
         }
-        #hero h4 {
-            font-size: 18px;
-        }
-        #hero a.btn {
-            padding: 15px 38px;
-        }
-      }
+ 
     </style>
 </head>
 <body id="top">
+    <!------------------------------------------------------------------------->
     <div id="hero">
         <div class="bg_image"></div>
         <h1>Responsive web design</h1>
-        <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo temporibus deleniti dicta quia cupiditate ullam voluptate tenetur et, quidem reiciendis! Earum qui excepturi architecto nesciunt fuga ex temporibus unde iste.</h4>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo temporibus deleniti dicta quia cupiditate ullam voluptate tenetur et, quidem reiciendis! Earum qui excepturi architecto nesciunt fuga ex temporibus unde iste.</h4>
         <a class="btn">More content</a>
     </div>
+    <!------------------------------------------------------------------------->
+    <main id="main">
+        <h2>Wellcom to web dev</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quis nisi dicta nostrum omnis ullam veritatis sed fugiat excepturi. Dolore laudantium enim nobis ad voluptates perspiciatis dolorem dolorum mollitia in.</p>
+        <ol>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ol>
+    </main>
+
+
     <!------------------------------------------------------------------------->
    <footer>
     <ul>
@@ -97,8 +90,9 @@
         <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a> </li>
         <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
     </ul>
-    <p>&copy; <script>document.write(new Date().getFullYear());</script> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque quas molestias at voluptatem! Quo nostrum obcaecati adipisci quibusdam quasi illum volu</p>
+    <p>&copy; 2023 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque quas molestias at voluptatem! Quo nostrum obcaecati adipisci quibusdam quasi illum volu</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius amet quos quae libero, odio tempore consequatur earum provident veniam ratione cons</p>
    </footer>
+   <!------------------------------------------------------------------------->
 </body>
 </html>

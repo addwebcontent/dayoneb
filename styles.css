@@ -10,8 +10,20 @@ html {
     color: #555;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+header, footer, main, section, div, article, aside, form {
+    content-visibility: auto;
 }
 
 ul {
@@ -20,6 +32,85 @@ ul {
 a {
     color: #fff;
 }
+
+/* ----------------
+-----Hero--------
+----------------*/
+     
+#hero {
+    background: gray;
+    color: #fff;
+    text-align: center;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    background-image: url("images/image1.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-blend-mode: lighten;
+
+    min-height: 100vh;
+  }
+  #hero h2 {
+    margin: 20px 20px;
+    border: 2px solid black;
+    color: #000;
+  }
+
+  #hero h1 {
+    font-size: 24px;
+    text-shadow: 1px 1px #000;
+    margin-bottom: 50px;
+  }
+
+  #hero h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+  }
+
+  #hero a.btn {
+    color: #fff;
+    background-color: #131633;
+    text-decoration: none;
+    padding: 20px 48px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    border: 2px solid #fff;
+  }
+
+  #hero a.btn:hover {
+    background-color: #2196f3;
+  }
+
+  @media (max-width: 800px) {
+    #hero {
+        min-height: 50vh;
+       
+    }
+
+    #hero h1 {
+        font-size: 35px;
+    }
+    #hero h2 {
+        font-size: 30px;
+    }
+    #hero a.btn {
+        padding: 20px 38px;
+    }
+  }
+
 /* ----------------
 -----Footer--------
 ----------------*/
